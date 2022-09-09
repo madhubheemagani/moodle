@@ -1,0 +1,473 @@
+@import url('https://fonts.cdnfonts.com/css/butler');
+
+body {
+    font-family: 'Butler', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #B0B0B0;
+}
+
+/*------------Fonts--------------*/
+@font-face {
+    font-family: 'NotoSerifItalic';
+    src: url('../fonts/NotoSerif-Italic.eot');
+    src: url('../fonts/NotoSerif-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSerif-Italic.woff2') format('woff2'),
+        url('../fonts/NotoSerif-Italic.woff') format('woff'),
+        url('../fonts/NotoSerif-Italic.ttf') format('truetype'),
+        url('../fonts/NotoSerif-Italic.svg#NotoSerif-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSerif';
+    src: url('../fonts/NotoSerif.eot');
+    src: url('../fonts/NotoSerif.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSerif.woff2') format('woff2'),
+        url('../fonts/NotoSerif.woff') format('woff'),
+        url('../fonts/NotoSerif.ttf') format('truetype'),
+        url('../fonts/NotoSerif.svg#NotoSerif') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSerifBold';
+    src: url('../fonts/NotoSerif-Bold.eot');
+    src: url('../fonts/NotoSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSerif-Bold.woff2') format('woff2'),
+        url('../fonts/NotoSerif-Bold.woff') format('woff'),
+        url('../fonts/NotoSerif-Bold.ttf') format('truetype'),
+        url('../fonts/NotoSerif-Bold.svg#NotoSerif-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSerifBoldItalic';
+    src: url('../fonts/NotoSerif-BoldItalic.eot');
+    src: url('../fonts/NotoSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSerif-BoldItalic.woff2') format('woff2'),
+        url('../fonts/NotoSerif-BoldItalic.woff') format('woff'),
+        url('../fonts/NotoSerif-BoldItalic.ttf') format('truetype'),
+        url('../fonts/NotoSerif-BoldItalic.svg#NotoSerif-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*--------------------------*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1220px;
+    }
+}
+
+
+
+/*---------------
+Hero Section
+----------------*/
+
+.hero_section .hero_imgwrapper .img_wrapper {
+    position: relative;
+}
+
+.hero_section .hero_imgwrapper .img_wrapper::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, #FFFFFF 50.45%, rgba(239, 239, 239, 0) 82.33%);
+    transform: rotate(-179.74deg);
+    height: calc(100% + 1px);
+    display: block;
+    width: 370px;
+    top: -1px;
+    right: -1px;
+}
+
+
+.hero_section .container{max-width: 100%;}
+
+h1.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 77px;
+    color: #000000;
+    font-family: 'Butler', sans-serif;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+h3.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150.5%;
+    color: #117d9f;
+    margin-bottom: 0px;
+}
+
+.author_img {
+    min-width: 66px;
+}
+
+.trial_icon {
+    min-width: 135px;
+}
+
+h2.title {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+    color: #242424;
+    font-family: 'NotoSerif';
+}
+
+.author_detail span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: #565656;
+    display: block;
+    font-family: 'NotoSerif';
+}
+
+
+h2.title p {
+    color: #1CBCEE;
+    display: inline-block;
+    margin: 0px;
+    line-height: 1;
+}
+
+.author_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 30px 0px 0px;
+}
+
+.author_detail {
+    margin-left: 20px;
+}
+
+.hero_description .cover_box {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+	border:#000033 solid 0px;
+	padding-left:8%;
+	
+}
+
+
+.hero_description {
+    position: relative;
+    z-index: 1;
+}
+
+
+.sepline_img {
+    position: absolute;
+    right: 0px;
+    bottom: -25px;
+    line-height: 0;
+}
+
+
+
+.hero_description .title_wrap h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 0px;
+    background: linear-gradient(260.97deg, #227DB6 23.47%, #855791 64.62%, #EA2063 105.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.title_wrap {
+    text-align: center;
+}
+
+.title_wrap h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35.9117px;
+    margin-bottom: 0px;
+    line-height:normal;
+    text-align: center;
+    color: #717070;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.form_wrapper {
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+.input_box input {
+    border: 1px solid #BCBCBC;
+    border-radius: 6px;
+    width: 100%;
+    padding: 15px 23px;
+}
+
+.input_box+.input_box {
+    margin-top: 15px;
+}
+
+.login_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login_options .box1 span {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    line-height: 29px;
+    color: #4A4A4A;
+}
+
+.login_options input[type="checkbox"] {
+    width: 22px;
+    border: 2px solid #BCBCBC;
+    border-radius: 5px;
+    height: 22px;
+}
+
+
+.login_options .box1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login_options {
+    margin-top: 25px;
+}
+
+.login_options .box2 a {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+    color: #7F7A76;
+    transition: all ease 300ms;
+}
+
+.login_btn {
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+
+.login_btn button {
+background: linear-gradient(260.97deg, #227DB6 23.47%, #855791 64.62%, #EA2063 105.25%);
+    border-radius: 6px;
+    font-family: 'NotoSerif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: #FFFFFF;
+    width: 100%;
+    border: 0px;
+    padding: 10px 15px;
+}
+
+.more_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+}
+
+.more_options .box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.more_options .box1 span{font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    background: linear-gradient(260.97deg, #227DB6 23.47%, #855791 64.62%, #EA2063 105.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Times New Roman';}
+
+
+    .more_options .box2 a{font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+transition: all ease 300ms;
+line-height: 150.5%;
+/* or 39px */
+
+text-align: center;
+transition: all ease 300ms;
+color: #000000;}
+
+.terms a{font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150.5%;
+text-align: center;
+font-family: 'NotoSerif';
+transition: all ease 300ms;
+color: #232323;}
+
+
+input:focus,button:focus{outline: none;}
+
+
+.hero_imgwrapper {
+    /* background-image: url(images/hero_img.png);
+    position: relative;
+    background-position: top left;
+    background-repeat: no-repeat; */
+    height: 100vh;
+}
+
+
+.login_body{position: relative;}
+
+/* .login_body::after {
+    background-image: url(../images/after-img.png);
+    position: absolute;
+    content: "";
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+   top:0px;
+    background-size: cover;
+    z-index: -1;
+    height:100vh;
+} */
+
+.form-group {
+  display: block;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1;
+    color: #4A4A4A;
+}
+
+.form-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+border: 2px solid #BCBCBC;
+border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #1CBCEE;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+.login_options .box2 a:hover,.more_options .box2 a:hover,.terms a:hover{color:#1CBCEE;}
+
+.login_body::after {
+    content: "";
+    background: linear-gradient(90deg, #FFFFFF 46.45%, rgba(239, 239, 239, 0) 84.33%);
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70%;
+    height: calc(100vh + 0vh);
+    display: block;
+	padding-left:10%;
+}
